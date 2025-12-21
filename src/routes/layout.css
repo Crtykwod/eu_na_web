@@ -30,6 +30,12 @@
   --font-main: "Jetbrains Mono";
 }
 
+
+::selection {
+  @apply bg-violet-secundary text-white;
+}
+
+
 #bg-orbs {
   width: 45vw;
   height: 45vw;

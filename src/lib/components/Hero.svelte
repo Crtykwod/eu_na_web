@@ -17,7 +17,7 @@
 
 	<h1
 		in:fly={{ y: 30, duration: 1000, delay: 300, easing: cubicOut }}
-		class="font-archivo font-bold text-[clamp(3rem,-0.3137rem+13.5948vw,16rem)] linhei text-white mb-6"
+		class="font-archivo font-bold text-[clamp(3rem,-0.3137rem+13.5948vw,16rem)] text-white mb-6"
 		style="text-shadow: 0 0 40px rgba(120, 0, 255, 0.2);"
 	>
 		CARLOS <span class="text-violet-primary">S.</span>
