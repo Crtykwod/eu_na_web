@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+
+@font-face {
+  src: url("/fonts/ArchivoBlack-Regular.ttf");
+  font-family: "Archivo Black";
+}
+
+@font-face {
+  src: url("/fonts/JetBrainsMono.ttf");
+  font-family: "Jetbrains Mono";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("/fonts/JetBrainsMono-Italic.ttf");
+  font-family: "Jetrbains Mono";
+  font-weight: bold;
+  font-style: italic;
+}
+
+@theme {
+  /* COLORS */
+  --color-black-bg: #050505;
+  --color-white-title: #FFFFFF;
+  --color-violet-primary: #7800FF;
+  --color-violet-secundary: #B066FF;
+
+  /* TYPOGRAPHY */
+  --font-archivo: "Archivo Black";
+  --font-main: "Jetbrains Mono";
+}
+
+#bg-orbs {
+  width: 45vw;
+  height: 45vw;
+  right: 50%;
+  top: 50%;
+  translate: -50% -50%;
+
+  @apply absolute bg-violet-primary/60 rounded-full blur-[80px] will-change-transform mix-blend-screen;
+}
+
+#bg-orbs::before {
+  content: "";
+  width: 25vw;
+  height: 25vw;
+  right: 0;
+  
+  @apply absolute bg-[#4C00A4]/60 rounded-full blur-[60px] will-change-transform mix-blend-screen;
+}
+
+#bg-orbs::after {
+  content: "";
+  width: 12vw;
+  height: 12vw;
+  right: 0;
+
+  @apply absolute bg-[#b066ff]/60 rounded-full blur-xs will-change-transform mix-blend-screen;
+}
+
